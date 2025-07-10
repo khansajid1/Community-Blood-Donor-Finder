@@ -1,0 +1,506 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c62828;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.logo-img {
+  height: 75px; /* adjust height as needed */
+  object-fit: contain;
+  vertical-align: middle;
+  border-radius: 30px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffebee;
+}
+
+.hero {
+  height: 80vh;
+ background-image: url('../images/hero.avif');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 0 1rem;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons .btn {
+  background: #c62828;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero-buttons .btn:hover {
+  background: #b71c1c;
+}
+.section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #c62828;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.alt-bg {
+  background-color: #f9f9f9;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  color: rgb(177, 21, 21);
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 200px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+/* 🎨 Individual card backgrounds */
+.card1 {
+  background-image: url('../images/save-lives.jpeg');
+}
+
+.card2 {
+  background-image: url('../images/community-impact.webp');
+}
+
+.card3 {
+  background-image: url('../images/quick-donation.jpg');
+}
+
+.card4 {
+  background-image: url('../images/health-benefits.jpg');
+}
+
+
+/* Steps */
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step {
+  flex: 1;
+  max-width: 250px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* CTA Section */
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta .btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #c62828;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.cta .btn.secondary {
+  background: #fff;
+  color: #c62828;
+  border: 2px solid #c62828;
+}
+
+.cta .btn:hover {
+  background: #b71c1c;
+}
+
+.cta .btn.secondary:hover {
+  background: #c62828;
+  color: white;
+}
+
+/* Register */
+
+.form-section {
+  padding: 4rem 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.form-box {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-box input,
+.form-box select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-box .btn {
+  background: #c62828;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-box .btn:hover {
+  background: #b71c1c;
+}
+
+/* Login */
+
+.form-link {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.form-link a {
+  color: #c62828;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-link a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 300px;
+  margin: 2rem auto;
+}
+
+.dashboard-buttons .btn {
+  padding: 0.9rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  background: #c62828;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dashboard-buttons .btn:hover {
+  background: #b71c1c;
+}
+
+.dashboard-buttons .btn.secondary {
+  background: #fff;
+  color: #c62828;
+  border: 2px solid #c62828;
+}
+
+.dashboard-buttons .btn.secondary:hover {
+  background: #c62828;
+  color: white;
+}
+
+/* Requests */
+
+.request-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  border-radius: 8px;
+  background-color: #fff3f3;
+}
+
+/* About Page Specific Styles */
+.about-hero {
+  background: url('../images/hero.avif') center/cover no-repeat;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-blend-mode: darken;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.about-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.about-section h2 {
+  color: #c62828;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section.alt-bg {
+  background-color: #f9f9f9;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 2rem auto 0;
+}
+
+.about-list li {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+/* Steps styling reused */
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step {
+  flex: 1;
+  max-width: 250px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.step h3 {
+  color: #b71c1c;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Contact Page Styles */
+.contact-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.contact-section h1 {
+  color: #c62828;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section .intro {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-info, .contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: #fff3f3;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.contact-info h2, .contact-form h2 {
+  color: #b71c1c;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form .btn {
+  width: 100%;
+  background: #c62828;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background: #b71c1c;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 3rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.faq-section h2 {
+  color: #c62828;
+  margin-bottom: 2rem;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+  color: #b71c1c;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #c62828;
+  color: #fff;
+}

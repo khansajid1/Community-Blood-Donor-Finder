@@ -1,0 +1,45 @@
+<!-- donors.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Available Donors | BloodFinder</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo-img"/></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="requests.html">Blood Requests</a></li>
+        <li><a href="donors.html" class="active">Donors</a></li>
+        <li><button id="logoutBtn" class="btn-nav">Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Donor List Section -->
+  <section class="container">
+    <h2>Available Blood Donors</h2>
+    <div id="donorList" class="card-grid"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-simple container">
+      <div class="footer-left">
+        <p>&copy; 2025 BloodFinder. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/donors.js"></script>
+</body>
+</html>

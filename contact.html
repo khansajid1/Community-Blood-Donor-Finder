@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | BloodFinder</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo-img" /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="requests.html">Requests</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html" class="btn-nav">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section container">
+    <h1>Contact Us</h1>
+    <p class="intro">
+      Have a question, suggestion, or need help? Our team is here to support you.
+      We usually respond within 24 hours.
+    </p>
+
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>📍 Reach Us</h2>
+        <p><strong>Email:</strong> support@bloodfinder.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> 101 Lifeline Avenue, New Delhi, India</p>
+
+        <h3 style="margin-top: 2rem;">⏰ Office Hours</h3>
+        <p>We are available 24/7 — day and night, including weekends and holidays.</p>
+        <p>Emergency blood needs don't wait, and neither do we.</p>
+
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" id="contactForm">
+        <h2>✉️ Send Us a Message</h2>
+        <input type="text" placeholder="Your Name" id="name" required />
+        <input type="email" placeholder="Your Email" id="email" required />
+        <textarea placeholder="Your Message" rows="5" id="message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-note">We’ll never share your personal information with anyone.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section container">
+    <h2>❓ Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>How can I register as a blood donor?</h3>
+        <p>Click on the “Register” button on the homepage, fill in your details, and you’ll be added to our donor database.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is my data secure?</h3>
+        <p>Yes. We use encrypted authentication and follow best practices to protect your information.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I update my blood group or location?</h3>
+        <p>Yes, after logging in, go to your dashboard and edit your profile anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 BloodFinder. Made with ❤️ for life-saving impact.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Message sent! We'll get back to you soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

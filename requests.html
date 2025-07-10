@@ -1,0 +1,44 @@
+<!-- requests.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Requests | BloodFinder</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo-img"/></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="post-request.html">Post Request</a></li>
+        <li><a href="donors.html">Donors</a></li>
+        <li><button id="logoutBtn" class="btn-nav">Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <section class="container">
+    <h2>Active Blood Requests</h2>
+    <div id="requestList" class="card-grid"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-simple container">
+      <div class="footer-left">
+        <p>&copy; 2025 BloodFinder. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/requests.js"></script>
+</body>
+</html>

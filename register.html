@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | BloodFinder</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo-img"/></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="requests.html">Requests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="btn-nav">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Register Form -->
+  <section class="form-section">
+    <div class="container">
+      <h2>Register as Donor or Requester</h2>
+      <form id="registerForm" class="form-box">
+        <input type="text" placeholder="Full Name" id="name" required />
+        <input type="email" placeholder="Email" id="email" required />
+        <input type="password" placeholder="Password" id="password" required />
+        <input type="password" placeholder="Confirm Password" id="confirmPassword" required />
+        <input type="tel" placeholder="Phone Number" id="phone" required />
+        <input type="text" placeholder="City / Location" id="location" required />
+
+        <select id="bloodGroup" required>
+          <option value="">Select Blood Group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-simple container">
+      <div class="footer-left">
+        <p>&copy; 2025 BloodFinder. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS script -->
+  <script src="js/register.js" defer></script>
+</body>
+</html>
