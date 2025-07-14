@@ -497,6 +497,48 @@ body {
   }
 }
 
+/* ===================== */
+/* 🚑 Blood Request Cards */
+/* ===================== */
+
+.card-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2rem;
+}
+
+.card.request-card {
+  background-color: #fff;
+  border-left: 6px solid #c62828;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card.request-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(198, 40, 40, 0.2);
+}
+
+.card.request-card h3 {
+  color: #c62828;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card.request-card p {
+  margin: 0.3rem 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.card.request-card p strong {
+  color: #b71c1c;
+}
+
+
 
 footer {
   text-align: center;
