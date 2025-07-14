@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       try {
-        const res = await fetch("http://localhost:5000/api/auth/register", {
+        const res = await fetch("https://community-blood-donor-finder-backend.onrender.com/api/auth/register", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ name, email, password, phone, location, bloodGroup })
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const password = document.getElementById("password").value;
 
       try {
-        const res = await fetch("http://localhost:5000/api/auth/login", {
+        const res = await fetch("https://community-blood-donor-finder-backend.onrender.com/api/auth/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, password })
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    fetch("http://localhost:5000/api/requests", {
+    fetch("https://community-blood-donor-finder-backend.onrender.com/api/requests", {
       headers: { Authorization: `Bearer ${token}` }
     })
     .then(res => res.json())
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       try {
-        const res = await fetch("http://localhost:5000/api/requests", {
+        const res = await fetch("https://community-blood-donor-finder-backend.onrender.com/api/requests", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    fetch("http://localhost:5000/api/users", {
+    fetch("https://community-blood-donor-finder-backend.onrender.com/api/users", {
       headers: { Authorization: `Bearer ${token}` }
     })
     .then(res => res.json())
