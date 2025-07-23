@@ -208,3 +208,39 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// ===== Become Donor Form Submission =====
+
+const donorForm = document.getElementById("donorForm");
+if (donorForm) {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    alert("Please login first.");
+    window.location.href = "login.html";
+  }
+
+  donorForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const isDonor = document.getElementById("isDonor").checked;
+    const availability = document.getElementById("availability").checked;
+
+    fetch("https://community-blood-donor-finder-backend.onrender.com/api/users/me", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`
+      },
+      body: JSON.stringify({ isDonor, availability })
+    })
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("responseMessage").textContent = "✅ Donor status updated successfully!";
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById("responseMessage").textContent = "❌ Server error. Please try again later.";
+    });
+  });
+}
+

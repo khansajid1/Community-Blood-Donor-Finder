@@ -1,9 +1,10 @@
+<!-- become-donor.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard | BloodFinder</title>
+  <title>Become a Donor | BloodFinder</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -16,24 +17,33 @@
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="requests.html">Blood Requests</a></li>
+        <li><a href="donors.html">Donors</a></li>
         <li><a href="become-donor.html" class="active">Become Donor</a></li>
         <li><button id="logoutBtn" class="btn-nav">Logout</button></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Dashboard Content -->
-  <section class="form-section">
-    <div class="container">
-      <h2>Welcome, <span id="username">User</span> 👋</h2>
-      <p>Select an action below:</p>
+  <!-- Donor Registration Section -->
+  <section class="container">
+    <h2>Register as a Blood Donor</h2>
+    <form id="donorForm" class="form-card">
+      <label>
+        <input type="checkbox" id="isDonor" />
+        I want to register as a blood donor
+      </label><br><br>
 
-      <div class="dashboard-buttons">
-        <a href="post-request.html" class="btn secondary">Post Blood Request</a>
-        <a href="requests.html" class="btn">View All Requests</a>
-        <a href="donors.html" class="btn">View Donors</a>
-      </div>
-    </div>
+      <label>
+        <input type="checkbox" id="availability" />
+        I am currently available to donate blood
+      </label><br><br>
+
+      <button type="submit" class="btn-primary">Update</button>
+    </form>
+
+    <p id="responseMessage" class="status-message"></p>
   </section>
 
   <!-- Footer -->
